@@ -23,7 +23,7 @@ Antes da avaliação, é de extrema importância que os avaliadores garantam que
 - Os participantes podem desistir da pesquisa a qualquer momento, sem necessidade de preencher um documento ou termo.
 
 ## 5.Avaliação
-Para esta avaliação, um protótipo de alta fidelidade será apresentado aos usuários, e após a interação dos mesmos com o protótipo, serão feitas perguntas relacionadas a experiência e opiniões relacionados a ele. Estas perguntas ajudaram a entender melhor a qualidade  do sistema e o quão próximo do desejado para o produto final ele está.
+Para esta avaliação, um protótipo de alta fidelidade será apresentado aos usuários, e após a interação dos mesmos com o protótipo, serão feitas perguntas relacionadas a experiência e opiniões relacionados a ele. Estas perguntas, juntas das anotações do(s) avaliador(es) ajudarão a entender melhor a qualidade  do sistema e o quão próximo do desejado para o produto final ele está.
 
 ### 5.1 Perguntas que serão feitas na avaliação
 
