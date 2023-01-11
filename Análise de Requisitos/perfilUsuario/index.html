@@ -1,0 +1,866 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://interacao-humano-computador.github.io/2022.2-UnbIdiomas/An%C3%A1lise%20de%20Requisitos/perfilUsuario/" rel="canonical"/>
+<link href="../metasUsabilidade/" rel="prev"/>
+<link href="../personas/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.0.3" name="generator"/>
+<title>Perfil do Usuário - UnB Idiomas</title>
+<link href="../../assets/stylesheets/main.6b71719e.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+                </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="green" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#perfil-do-usuario">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="UnB Idiomas" class="md-header__button md-logo" data-md-component="logo" href="../.." title="UnB Idiomas">
+<img alt="logo" src="../../assets/icons/unb.jpg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            UnB Idiomas
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Perfil do Usuário
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="green" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="green" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+</form>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</div>
+<div class="md-source__repository">
+    2022.2-UnbIdiomas
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+      Inicio
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../aspectosEticos/">
+        Análise de Requisitos
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao1/">
+        Apresentações
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega1/">
+        Atas das Reuniões
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/An%C3%A1lise%20de%20Tarefas/planAnaTarefas/">
+        Design, Avaliação e Desenvolvimento
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Planejamento/avaliacao/">
+        Planejamento
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../pol%C3%ADticas/branch/">
+        Políticas
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="UnB Idiomas" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="UnB Idiomas">
+<img alt="logo" src="../../assets/icons/unb.jpg"/>
+</a>
+    UnB Idiomas
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</div>
+<div class="md-source__repository">
+    2022.2-UnbIdiomas
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        Inicio
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label aria-expanded="true" class="md-nav__link" for="__nav_2" tabindex="0">
+          Análise de Requisitos
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Análise de Requisitos" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Análise de Requisitos
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../aspectosEticos/">
+        Aspectos Éticos
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../guiaEstilo/">
+        Guia de Estilo
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../metasUsabilidade/">
+        Metas de usabilidade
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Perfil do Usuário
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Perfil do Usuário
+      </a>
+<nav aria-label="Conteúdo da página" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Conteúdo da página
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introducao">
+    Introdução
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#metodologia">
+    Metodologia
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#resultados-do-questionario">
+    Resultados do Questionário
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conclusao">
+    Conclusão
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#referencias">
+    Referências
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#historico-de-versao">
+    Histórico de versão
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../personas/">
+        Personas
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../principiosGerais/">
+        Princípios Gerais de Projeto
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" id="__nav_2_7" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_2_7" tabindex="0">
+          Análise de Tarefas
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Análise de Tarefas" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_7">
+<span class="md-nav__icon md-icon"></span>
+          Análise de Tarefas
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../An%C3%A1lise%20de%20Tarefas/AHT/">
+        Análise Hierárquica de Tarefas
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../An%C3%A1lise%20de%20Tarefas/CMN-GOMS/">
+        CNM-GOMS
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_3" tabindex="0">
+          Apresentações
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Apresentações" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Apresentações
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao1/">
+        Apresentação da Entrega 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao2/">
+        Apresentação da Entrega 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao3/">
+        Apresentação da Entrega 3
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao4/">
+        Apresentação da Entrega 4
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao5/">
+        Apresentação da Entrega 5
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_4" tabindex="0">
+          Atas das Reuniões
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Atas das Reuniões" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Atas das Reuniões
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega1/">
+        Entrega 1 - Reunião 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega2/">
+        Entrega 2 - Reunião 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega3/">
+        Entrega 3 - Reunião 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega4/">
+        Entrega 4 - Reunião
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega5/">
+        Entrega 5 - Reunião 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega6/">
+        Entrega 4 - Reunião
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5" tabindex="0">
+          Design, Avaliação e Desenvolvimento
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Design, Avaliação e Desenvolvimento" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Design, Avaliação e Desenvolvimento
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1" id="__nav_5_1" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5_1" tabindex="0">
+          Nível 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Nível 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_1">
+<span class="md-nav__icon md-icon"></span>
+          Nível 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1_1" id="__nav_5_1_1" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5_1_1" tabindex="0">
+          Análise de Tarefas
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Análise de Tarefas" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_5_1_1">
+<span class="md-nav__icon md-icon"></span>
+          Análise de Tarefas
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/An%C3%A1lise%20de%20Tarefas/planAnaTarefas/">
+        Planejamento da Avaliação da Análise de Tarefas
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/An%C3%A1lise%20de%20Tarefas/plan_relatos_resultados/">
+        Planejamento do relato dos resultados da análise de tarefas
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/An%C3%A1lise%20de%20Tarefas/resAvalAnaliseDeTarefas/">
+        Resultado da Avaliação da Análise de Tarefas
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1_2" id="__nav_5_1_2" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5_1_2" tabindex="0">
+          Storyboard
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Storyboard" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_5_1_2">
+<span class="md-nav__icon md-icon"></span>
+          Storyboard
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/Storyboard/planAvalStoryboard/">
+        Planejamento da Avaliação do Storyboard
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/Storyboard/planRelAvalStoryboard/">
+        Planejamento do relato da Avaliação do Storyboard
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/Storyboard/relAvalStoryboard/">
+        Resultados da avaliação de Storyboard
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/Storyboard/storyboards/">
+        Storyboards
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/Storyboard/testePiloto/">
+        Teste Piloto
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" id="__nav_5_2" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5_2" tabindex="0">
+          Nível 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Nível 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_2">
+<span class="md-nav__icon md-icon"></span>
+          Nível 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%202/planAvalPrototipoPapel/">
+        Planejamento da Avaliação do Protótipo de Papel
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%202/planRelAvalPrototipoPapel/">
+        Planejamento do relato da Avaliação do Protótipo de Papel
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" id="__nav_5_3" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5_3" tabindex="0">
+          Nível 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Nível 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_3">
+<span class="md-nav__icon md-icon"></span>
+          Nível 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%203/planAvalPrototipoAlta/">
+        Planejamento da Avaliação do Protótipo de Papel
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_6" tabindex="0">
+          Planejamento
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Planejamento" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          Planejamento
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Planejamento/avaliacao/">
+        Avaliação do site
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Planejamento/ferramentas/">
+        Ferramentas
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Planejamento/metodologias/">
+        Metodologias
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Planejamento/planejamento/">
+        Planejamento da avaliação
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Planejamento/processoDesign/">
+        Processo de Design
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Planejamento/roadmap/">
+        Cronograma
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Planejamento/siteAvaliados/">
+        Listas de sites avaliados
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" id="__nav_7" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_7" tabindex="0">
+          Políticas
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Políticas" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+          Políticas
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../pol%C3%ADticas/branch/">
+        Politica de branches
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../pol%C3%ADticas/commit/">
+        Política de commits
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Conteúdo da página" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Conteúdo da página
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introducao">
+    Introdução
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#metodologia">
+    Metodologia
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#resultados-do-questionario">
+    Resultados do Questionário
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conclusao">
+    Conclusão
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#referencias">
+    Referências
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#historico-de-versao">
+    Histórico de versão
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="perfil-do-usuario">Perfil do Usuário</h1>
+<h2 id="introducao">Introdução</h2>
+<p>Parte importante do desenvolvimento do projeto para efetuar o levantamento de dados e assim uma descrição detalhada das características dos usuários. Sendo identificado informações de interesse, experiência, nível de instrução, faixa etária etc.</p>
+<h2 id="metodologia">Metodologia</h2>
+<p>Como metodologia foi elaborado um questionário no Google Forms com 22 questões a respeito dos usuários, abordando questões demográficas, relacionadas com a Universidade de Brasília e com a usabilidade do site. Além disso, um termo de consentimento foi definido, seguindo as normas da resolução Nº 466 de 12 de Dezembro de 2012, a fim de realizar uma correta e ética coleta de informações dos usuários no sistema. Este questionario foi divulgado de forma livre no Distrito Federal e entorno, atendendo as comunidades internas e externas da Universidade de Brasília, nos quais o produto busca atender. As respostas dos participantes foram coletadas entre os dias 5/12 e 7/12.</p>
+<p><br/></p>
+<p>Para mais informações, acesse o <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJifKbcQosPv9t4BfMkaYy_FKBi8WNvywW8TP1q541noZ_hw/viewform?vc=0&amp;c=0&amp;w=1&amp;flr=0">questionário</a>.</p>
+<h2 id="resultados-do-questionario">Resultados do Questionário</h2>
+<p><br/></p>
+<p>Em relação às perguntas temos que na primeira pergunta  1 - Qual é a sua idade, temos os resultados na representação gráfica presente na <i>Figura 1</i>. Podemos notar que, cerca de 94,1% da amostra tem entre 18 a 25 anos e 5,9% dos participantes têm entre 26 e 34 anos.</p>
+<p>Em relação às perguntas temos que na primeira pergunta  <strong>1 - Qual é a sua idade?</strong>, temos os resultados na representação gráfica presente na <i>Figura 1</i>. Podemos salientar que, cerca de 94,1% da amostra tem entre 18 a 25 anos e 5,9% dos participantes têm entre 26 e 34 anos.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q1.png"><img alt="Gráfico Q1" src="../../assets/img/perfil-do-usuario/q1.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 1 – Gráfico com o percentual de respostas da questão 1</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p><br/></p>
+<p>Na segunda pergunta <strong>2 - Qual é seu nível de escolaridade?</strong> 88,2% dos participantes têm o Ensino Superior incompleto e 11,8% têm o ensino médio completo, como mostra a  <i>Figura 2</i></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q2.png"><img alt="Gráfico Q2" src="../../assets/img/perfil-do-usuario/q2.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 2 – Gráfico com o percentual de respostas da questão 2</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p><br/></p>
+<p>Agora na <i>Figura 3</i> temos a pergunta <strong>3 - Como qual gênero você se identifica?</strong> Que mostra que 29,4% dos participantes marcaram a opção feminino no questionário e 70,6%, a opção masculino.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q3.png"><img alt="Gráfico Q3" src="../../assets/img/perfil-do-usuario/q3.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 3 – Gráfico com o percentual de respostas da questão 3</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p><br/></p>
+<p>A quarta pergunta : <strong>4 - Qual é a sua ocupação?</strong> 82,4% dos participantes são estudantes. enquanto 11,8% estão empregados e 5,9% são estudante e empregados..<i>(Figura 4)</i></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q4.png"><img alt="Gráfico Q4" src="../../assets/img/perfil-do-usuario/q4.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 4 – Gráfico com o percentual de respostas da questão 4</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p><br/></p>
+<p>Já na quinta pergunta do questionário, onde foi perguntado: <strong>5. Qual é a sua renda familiar?</strong> Temos os resultados mostrados na <i>Figura 5</i>. Vale ressaltar que esta questão era opcional.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q5.png"><img alt="Gráfico Q5" src="../../assets/img/perfil-do-usuario/q5.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 5 – Gráfico com o percentual de respostas da questão 5</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p><br/></p>
+<p>Questão seis do questionário <strong>6 .Qual RA (Região Administrativa) de Brasília você reside ?</strong>, a maioria dos participantes marcaram como primeira opção Águas Claras e como segundo lugar ficou o Guará, sendo possível ver o levantamento de dados no gráfico a partir da <i>Figura 6</i>.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q6.png"><img alt="Gráfico Q6" src="../../assets/img/perfil-do-usuario/q6.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 6 – Gráfico com o percentual de respostas da questão 6</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p><br/></p>
+<p>Agora na <i>Figura 7</i> temos <strong>7. Qual é o seu nível de afinidade com tecnologia?</strong> As respostas dos participantes ficaram bem distribuídas como mostrado na figura.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q7.png"><img alt="Gráfico Q7" src="../../assets/img/perfil-do-usuario/q7.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 7 – Gráfico com o percentual de respostas da questão 7</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p><br/></p>
+<p>A oitava pergunta : <strong>8 - Você é estudante da Universidade de Brasília ?</strong> A maioria dos participantes do questionário marcaram a opção "sim", com cerca de 82,4%, obtendo 17,6% dos participantes que marcaram não. <i>(Figura 8)</i></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q8.png"><img alt="Gráfico Q8" src="../../assets/img/perfil-do-usuario/q8.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 8 – Gráfico com o percentual de respostas da questão 8</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p><br/></p>
+<p>Na nona pergunta <strong>9. Caso seja, informe qual curso você é aluno.</strong> 46,7% dos participantes são do curso Engenharia de Software, enquanto os outros 8 cursos obtiveram 6,7% de alunos. <i>Figura 9</i>.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q9.png"><img alt="Gráfico Q9" src="../../assets/img/perfil-do-usuario/q9.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 9 – Gráfico com o percentual de respostas da questão 9</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p>Para a décima pergunta temos <strong>10. Caso seja, informe em qual campus você estuda (Marque mais opções caso frequente aulas em mais de um campus).</strong> A maioria dos participantes é do campus FGA - Gama como é ilustrado na <i>Figura 10</i>.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q10.png"><img alt="Gráfico 10" src="../../assets/img/perfil-do-usuario/q10.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 10 – Gráfico com o percentual de respostas da questão 10</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p>Agora como mostrado na <i>Figura 11</i> a questão <strong>11. Qual semestre você está cursando?</strong>, ficou com a porcentagem bem dividida, sendo possivel de perceber na figura.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q11.png"><img alt="Gráfico 11" src="../../assets/img/perfil-do-usuario/q11.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 11 – Gráfico com o percentual de respostas da questão 11</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p><br/></p>
+<p>Para a questão 12 onde se é questionado do participante <strong>12. Você já fez uso ou conhece a plataforma Unb Idiomas ?</strong>, segue algumas das respostas, como é mostrado na <i>Figura 12 </i>.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q12.png"><img alt="Gráfico 12" src="../../assets/img/perfil-do-usuario/q12.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 12 – Lista das respostas da questão 12</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p><br/></p>
+<p>Para a décima terceira pergunta <strong>Caso conheça a plataforma, como ficou sabendo de sua existência?</strong> A maioria dos participantes dizem que conheceram sobre a sua existência a partir amigos e conhecidos(<i>Figura 13</i>).</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q13.png"><img alt="Gráfico 13" src="../../assets/img/perfil-do-usuario/q13.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 13 – Gráfico com o percentual de respostas da questão 13</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p><br/></p>
+<p>Para a questão 14 onde se é questionado do participante <strong>14. Com que frequência você utiliza o UnB Idiomas?</strong>, metade dos participantes não fazem uso mais do sistema. <i>Figura 14 </i>.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q14.png"><img alt="Gráfico 14" src="../../assets/img/perfil-do-usuario/q14.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 14 – Gráfico com o percentual de respostas da questão 14</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p></p>
+<p>Para a questão 15 onde se é questionado do participante <strong>15. Qual(is) dispositivo(s) eletrônico(s) que você utiliza para ter acesso ao UnB Idiomas?</strong>, segue algumas das respostas, como é mostrado na  <i>Figura 15 </i>.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q15.png"><img alt="Gráfico 15" src="../../assets/img/perfil-do-usuario/q15.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 15 – Gráfico com o percentual de respostas da questão 15</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p></p>
+<p>Agora como mostrado na <i>Figura 16</i> a questão <strong>16. Você sente a necessidade ou gostaria que a UnB Idiomas tivesse algum tutorial de como utilizar o site?</strong>, a maioria dos participantes preferem ou sentem a necessidade de ter tutoriais visuais no sistema, com textos e imagens.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q16.png"><img alt="Gráfico 16" src="../../assets/img/perfil-do-usuario/q16.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 16 – Gráfico com o percentual de respostas da questão 16</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p></p>
+<p>Para a questão 17 onde se é questionado do participante <strong>17. Você gosta de explorar todas as funcionalidades que o Unb Idiomas oferece? Ou costuma usar sempre as mesmas?</strong>, 66,7% dos participantes demarcaram que não, sempre fazendo uso das mesmas funcionalidades <i>Figura 17 </i>.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q17.png"><img alt="Gráfico 17" src="../../assets/img/perfil-do-usuario/q17.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 17 – Gráfico com o percentual de respostas da questão 17</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p></p>
+<p>Agora como mostrado na <i>Figura 18</i> a questão <strong>18. O quanto você julga que tem domínio sobre as funcionalidades que o site oferece?</strong>, metade dos participantes determinaram que não possuem dominio nenhum sobre as funcionalidades do site, como visto na figura.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q18.png"><img alt="Gráfico 18" src="../../assets/img/perfil-do-usuario/q18.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 18 – Gráfico com o percentual de respostas da questão 18</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p></p>
+<p>Já na décima nona pergunta do questionário, onde foi perguntado: <strong>19. Durante a utilização do site você já presenciou um erro em alguma função que trouxe algum prejuízo para você?</strong> Temos o resultado mostrado na <i>Figura 19</i></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q19.png"><img alt="Gráfico Q19" src="../../assets/img/perfil-do-usuario/q19.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 19 – Imagem com texto da resposta da questão 19</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p><br/></p>
+<p>Para a questão 20 se é questionado do participante <strong>20. Você poderia dizer mais sobre essa funcionalidade e sua consequência negativa no uso do site?</strong> Segue a resposta mostrada na <i>Figura 20 </i>.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q20.png"><img alt="Gráfico 20" src="../../assets/img/perfil-do-usuario/q20.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 20 – Imagem com texto da resposta da questão 20</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p></p>
+<p>Para a questão 21 onde se é questionado do participante <strong>21. Você tem alguma sugestão/ideia de melhorias que podem ser feitas no site? Compartilhe-a conosco.</strong> Segue a resposta mostrada na <i>Figura 21 </i>.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q21.png"><img alt="Gráfico 21" src="../../assets/img/perfil-do-usuario/q21.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 21 – Imagem com texto da resposta da questão 21</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p></p>
+<p>Como introdução do questionário, o participante teve de aceitar o termo de consentimento para continuar na pesquisa. (<i>Figura 23</i>)</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q22.png"><img alt="Gráfico 23" src="../../assets/img/perfil-do-usuario/q22.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 23 – Gráfico com o percentual de respostas do termo de consentimento</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p>Na décima segunda pergunta, temos <strong>12 - Você já fez uso ou conhece a plataforma Unb Idiomas ?</strong>(<i>Figura 12</i>).Se o participante responder que que "Não" o questionário termina e ele já pode enviar sua contribuição, porém se ele responder que "Sim" ele segue para a questão <strong>13 - Caso conheça a plataforma, como ficou sabendo de sua existência?</strong>(<i>Figura 13</i>), onde o participante pode detalhar daí em diante como foi a sua experiência de acesso com o sistema.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q12.png"><img alt="Gráfico 12" src="../../assets/img/perfil-do-usuario/q12.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 12 – Gráfico com o percentual de respostas da questão 12</b><br/>
+  Fonte: Retirada da página de resultados do questionário no Google Forms</h6>
+</figcaption>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/perfil-do-usuario/q13.png"><img alt="Gráfico 13" src="../../assets/img/perfil-do-usuario/q13.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 13 – Algumas das respostas da questão 13</b><br/>
+  Fonte: Retirada da página de resultados do Google Forms</h6>
+</figcaption>
+<h2 id="conclusao">Conclusão</h2>
+<p>Levando em conta os dados coletados a partir do formulário, podemos concluir que o nosso perfil do usuário se baseia principalmente em homens da faixa etária dos 18 aos 25 anos, onde cerca de 41,2% utiliza diversos sistemas sem dificuldades, apresentando 50% dos participantes sem nenhum dominio sobre as funcionalidades oferecidas pelo site. Obtendo 66,7% dos participantes que utilizaram o site e relataram algum erro em alguma função que trouxeram prejuízo?</p>
+<h2 id="referencias">Referências</h2>
+<blockquote>
+<p>BARBOSA, Simone; SILVA, INTERAÇÃO HUMANO-COMPUTADOR. Local de publicação: Elsevier Editora Ltda, 2010. </p>
+<p>Resolução CNS nº 466/2012. <a href="https://bvsms.saude.gov.br/bvs/saudelegis/cns/2013/res0466_12_12_2012.html">https://bvsms.saude.gov.br/bvs/saudelegis/cns/2013/res0466_12_12_2012.html</a> acesso feito em 27 de novembro de 2022.</p>
+</blockquote>
+<h2 id="historico-de-versao">Histórico de versão</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Versão</th>
+<th align="center">Data</th>
+<th align="center">Descrição</th>
+<th align="center">Autor</th>
+<th align="center">Revisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1.0</td>
+<td align="center">07/12/2022</td>
+<td align="center">Elaboração do artefato perfil de usuário</td>
+<td align="center">Artur Seppa</td>
+<td align="center">Henrique Galdino</td>
+</tr>
+</tbody>
+</table>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      UnB - Faculdade do Gama © 2022
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://github.com/Interacao-Humano-Computador/2022.2-UnbIdiomas" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</a>
+<a class="md-social__link" href="http://www.unbidiomas.unb.br" rel="noopener" target="_blank" title="www.unbidiomas.unb.br">
+<svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9V320c0 28.4-10.8 57.7-22.3 80.8-6.5 13-13.9 25.8-22.5 37.6-3.2 4.3-4.1 9.9-2.3 15s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7.3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7-3.2-14.2-7.5-28.7-13.5-42v-24.6c0-30.2 10.2-58.7 27.9-81.5 12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5.8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1l280.6-101c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1c-7.6-2.7-15.6-4.1-23.7-4.1zM128 408c0 35.3 86 72 192 72s192-36.7 192-72l-15.3-145.4L354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6l-142.2-51.4L128 408z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.ba449ae6.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

@@ -1,0 +1,8 @@
+.badge {
+    text-align: center;
+    padding: 2px;
+}
+
+.badge-obs {
+    background-color: indigo;
+}

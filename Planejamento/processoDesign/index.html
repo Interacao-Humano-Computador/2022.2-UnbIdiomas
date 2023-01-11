@@ -1,0 +1,813 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://interacao-humano-computador.github.io/2022.2-UnbIdiomas/Planejamento/processoDesign/" rel="canonical"/>
+<link href="../planejamento/" rel="prev"/>
+<link href="../roadmap/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.0.3" name="generator"/>
+<title>Processo de Design - UnB Idiomas</title>
+<link href="../../assets/stylesheets/main.6b71719e.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+                </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="green" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#processo-de-design">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="UnB Idiomas" class="md-header__button md-logo" data-md-component="logo" href="../.." title="UnB Idiomas">
+<img alt="logo" src="../../assets/icons/unb.jpg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            UnB Idiomas
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Processo de Design
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="green" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="green" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+</form>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</div>
+<div class="md-source__repository">
+    2022.2-UnbIdiomas
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+      Inicio
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../An%C3%A1lise%20de%20Requisitos/aspectosEticos/">
+        Análise de Requisitos
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao1/">
+        Apresentações
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega1/">
+        Atas das Reuniões
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/An%C3%A1lise%20de%20Tarefas/planAnaTarefas/">
+        Design, Avaliação e Desenvolvimento
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../avaliacao/">
+        Planejamento
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../pol%C3%ADticas/branch/">
+        Políticas
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="UnB Idiomas" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="UnB Idiomas">
+<img alt="logo" src="../../assets/icons/unb.jpg"/>
+</a>
+    UnB Idiomas
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</div>
+<div class="md-source__repository">
+    2022.2-UnbIdiomas
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        Inicio
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_2" tabindex="0">
+          Análise de Requisitos
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Análise de Requisitos" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Análise de Requisitos
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../An%C3%A1lise%20de%20Requisitos/aspectosEticos/">
+        Aspectos Éticos
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../An%C3%A1lise%20de%20Requisitos/guiaEstilo/">
+        Guia de Estilo
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../An%C3%A1lise%20de%20Requisitos/metasUsabilidade/">
+        Metas de usabilidade
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../An%C3%A1lise%20de%20Requisitos/perfilUsuario/">
+        Perfil do Usuário
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../An%C3%A1lise%20de%20Requisitos/personas/">
+        Personas
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../An%C3%A1lise%20de%20Requisitos/principiosGerais/">
+        Princípios Gerais de Projeto
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" id="__nav_2_7" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_2_7" tabindex="0">
+          Análise de Tarefas
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Análise de Tarefas" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_7">
+<span class="md-nav__icon md-icon"></span>
+          Análise de Tarefas
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../An%C3%A1lise%20de%20Requisitos/An%C3%A1lise%20de%20Tarefas/AHT/">
+        Análise Hierárquica de Tarefas
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../An%C3%A1lise%20de%20Requisitos/An%C3%A1lise%20de%20Tarefas/CMN-GOMS/">
+        CNM-GOMS
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_3" tabindex="0">
+          Apresentações
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Apresentações" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Apresentações
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao1/">
+        Apresentação da Entrega 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao2/">
+        Apresentação da Entrega 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao3/">
+        Apresentação da Entrega 3
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao4/">
+        Apresentação da Entrega 4
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao5/">
+        Apresentação da Entrega 5
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_4" tabindex="0">
+          Atas das Reuniões
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Atas das Reuniões" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Atas das Reuniões
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega1/">
+        Entrega 1 - Reunião 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega2/">
+        Entrega 2 - Reunião 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega3/">
+        Entrega 3 - Reunião 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega4/">
+        Entrega 4 - Reunião
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega5/">
+        Entrega 5 - Reunião 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega6/">
+        Entrega 4 - Reunião
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5" tabindex="0">
+          Design, Avaliação e Desenvolvimento
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Design, Avaliação e Desenvolvimento" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Design, Avaliação e Desenvolvimento
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1" id="__nav_5_1" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5_1" tabindex="0">
+          Nível 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Nível 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_1">
+<span class="md-nav__icon md-icon"></span>
+          Nível 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1_1" id="__nav_5_1_1" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5_1_1" tabindex="0">
+          Análise de Tarefas
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Análise de Tarefas" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_5_1_1">
+<span class="md-nav__icon md-icon"></span>
+          Análise de Tarefas
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/An%C3%A1lise%20de%20Tarefas/planAnaTarefas/">
+        Planejamento da Avaliação da Análise de Tarefas
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/An%C3%A1lise%20de%20Tarefas/plan_relatos_resultados/">
+        Planejamento do relato dos resultados da análise de tarefas
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/An%C3%A1lise%20de%20Tarefas/resAvalAnaliseDeTarefas/">
+        Resultado da Avaliação da Análise de Tarefas
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1_2" id="__nav_5_1_2" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5_1_2" tabindex="0">
+          Storyboard
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Storyboard" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_5_1_2">
+<span class="md-nav__icon md-icon"></span>
+          Storyboard
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/Storyboard/planAvalStoryboard/">
+        Planejamento da Avaliação do Storyboard
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/Storyboard/planRelAvalStoryboard/">
+        Planejamento do relato da Avaliação do Storyboard
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/Storyboard/relAvalStoryboard/">
+        Resultados da avaliação de Storyboard
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/Storyboard/storyboards/">
+        Storyboards
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/Storyboard/testePiloto/">
+        Teste Piloto
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" id="__nav_5_2" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5_2" tabindex="0">
+          Nível 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Nível 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_2">
+<span class="md-nav__icon md-icon"></span>
+          Nível 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%202/planAvalPrototipoPapel/">
+        Planejamento da Avaliação do Protótipo de Papel
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%202/planRelAvalPrototipoPapel/">
+        Planejamento do relato da Avaliação do Protótipo de Papel
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" id="__nav_5_3" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5_3" tabindex="0">
+          Nível 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Nível 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_3">
+<span class="md-nav__icon md-icon"></span>
+          Nível 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%203/planAvalPrototipoAlta/">
+        Planejamento da Avaliação do Protótipo de Papel
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label aria-expanded="true" class="md-nav__link" for="__nav_6" tabindex="0">
+          Planejamento
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Planejamento" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          Planejamento
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../avaliacao/">
+        Avaliação do site
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ferramentas/">
+        Ferramentas
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../metodologias/">
+        Metodologias
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../planejamento/">
+        Planejamento da avaliação
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Processo de Design
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Processo de Design
+      </a>
+<nav aria-label="Conteúdo da página" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Conteúdo da página
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ciclo-de-vida-simples">
+    Ciclo de vida simples
+  </a>
+<nav aria-label="Ciclo de vida simples" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#figura-01-ciclo-de-vida-simples-fonte-barbosa-et-al-2010">
+    Figura 01: Ciclo de vida simples. Fonte: (BARBOSA et al., 2010)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ciclo-de-vida-em-estrela">
+    Ciclo de vida em estrela
+  </a>
+<nav aria-label="Ciclo de vida em estrela" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#figura-02-ciclo-de-vida-em-estrela-fonte-barbosa-et-al-2010">
+    Figura 02: Ciclo de vida em estrela. Fonte: (BARBOSA et al., 2010)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ciclo-de-vida-de-mayhew">
+    Ciclo de vida de Mayhew
+  </a>
+<nav aria-label="Ciclo de vida de Mayhew" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#figura-03-ciclo-de-vida-de-mayhew-fonte-barbosa-et-al-2010">
+    Figura 03: Ciclo de vida de Mayhew. Fonte: (BARBOSA et al., 2010)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#escolha-do-modelo">
+    Escolha do modelo:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#referencias">
+    Referências:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../roadmap/">
+        Cronograma
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../siteAvaliados/">
+        Listas de sites avaliados
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" id="__nav_7" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_7" tabindex="0">
+          Políticas
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Políticas" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+          Políticas
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../pol%C3%ADticas/branch/">
+        Politica de branches
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../pol%C3%ADticas/commit/">
+        Política de commits
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Conteúdo da página" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Conteúdo da página
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ciclo-de-vida-simples">
+    Ciclo de vida simples
+  </a>
+<nav aria-label="Ciclo de vida simples" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#figura-01-ciclo-de-vida-simples-fonte-barbosa-et-al-2010">
+    Figura 01: Ciclo de vida simples. Fonte: (BARBOSA et al., 2010)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ciclo-de-vida-em-estrela">
+    Ciclo de vida em estrela
+  </a>
+<nav aria-label="Ciclo de vida em estrela" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#figura-02-ciclo-de-vida-em-estrela-fonte-barbosa-et-al-2010">
+    Figura 02: Ciclo de vida em estrela. Fonte: (BARBOSA et al., 2010)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ciclo-de-vida-de-mayhew">
+    Ciclo de vida de Mayhew
+  </a>
+<nav aria-label="Ciclo de vida de Mayhew" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#figura-03-ciclo-de-vida-de-mayhew-fonte-barbosa-et-al-2010">
+    Figura 03: Ciclo de vida de Mayhew. Fonte: (BARBOSA et al., 2010)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#escolha-do-modelo">
+    Escolha do modelo:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#referencias">
+    Referências:
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="processo-de-design">Processo de Design</h1>
+<p>O design é um processo que parte de três etapas básicas, sendo elas:</p>
+<ul>
+<li>Análise da situação atual: onde se estuda e intrerpreta a situação atual;</li>
+<li>Síntese de uma intervenção: a partir da interpretação dessa situação é proposta e planejada uma intervenção/mudança no projeto;</li>
+<li>Avaliação da nova situação: é feita uma comparação entre as etapas do processo para avaliação dos impactos causados, podendo ser encaixadas novas propostas em um processo iterativo, que permite por novas análises que o design seja aprimorado novamente, repetindo o ciclo.</li>
+</ul>
+<p>Entendendo a atividade de design como "enquadrar uma situação num tipo geral de problema cuja forma de solução seja conhecida", foram inventados ciclos de vida a partir de estudos que reuniam as etapas comuns durante o processo de design, de forma a servir como referência para realizar um processo bem sucedido.</p>
+<p>Dentre alguns dos ciclos avaliados para o design desse projeto temos:</p>
+<h2 id="ciclo-de-vida-simples">Ciclo de vida simples</h2>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/design-process/ciclo-de-vida-simples.png"><img alt="Ciclo de vida Simples" src="../../assets/img/design-process/ciclo-de-vida-simples.png"/></a></p>
+<h6 id="figura-01-ciclo-de-vida-simples-fonte-barbosa-et-al-2010">Figura 01: Ciclo de vida simples. Fonte: (BARBOSA et al., 2010)</h6>
+<p>No ciclo apresentado na (Figura 01), é definida uma versão simplificada e linearizada do processo geral de desenvolvimento, incluindo análise, desenvolvimento e avaliação após implantação. </p>
+<ul>
+<li>(re) design: o designer explora diferentes ideias alternativas de
+design para elaborar uma solução adequada às necessidades
+e requisitos definidos na atividade de análise;</li>
+<li>Versões interativas: para melhor avaliar o design resultante
+das propostas de solução que simulem o funcionamento da
+interface e deixem clara a intenção projetada, facilitando a
+participação do usuário durante a avaliação de IHC. </li>
+</ul>
+<h2 id="ciclo-de-vida-em-estrela">Ciclo de vida em estrela</h2>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/design-process/ciclo-de-vida-em-estrela.png"><img alt="Ciclo de vida em estrela" src="../../assets/img/design-process/ciclo-de-vida-em-estrela.png"/></a></p>
+<h6 id="figura-02-ciclo-de-vida-em-estrela-fonte-barbosa-et-al-2010">Figura 02: Ciclo de vida em estrela. Fonte: (BARBOSA et al., 2010)</h6>
+<p>Nesse ciclo, apresentado na (Figura 02) a avaliação é a atividade central e sempre deve ser executada após outras atividades. Cabe também ao designer decidir de acordo com a situação e a elaboração de seu raciocínio em torno do processo sobre a partir de qual etapa ele deve começar. Dentre as etapas do ciclo temos:</p>
+<ul>
+<li>
+<p>Análise de tarefas, usuários e funções: é a atividade responsável
+pelo aprendizado da situação atual e pelo levantamento das necessidades e oportunidades de melhoria;</p>
+</li>
+<li>
+<p>Especificação de requisitos: define os problemas que devem ser
+resolvido com o projeto de uma solução IHC;</p>
+</li>
+<li>
+<p>Projeto conceitual e especificação do design: onde a solução de
+IHC é concebida;</p>
+</li>
+<li>
+<p>Prototipação: as versões interativas das propostas de solução são
+elaboradas para serem avaliadas;</p>
+</li>
+<li>
+<p>Implementação: onde o sistema interativo final é desenvolvido, ela
+é tema central da eng. de software;</p>
+</li>
+<li>
+<p>Avaliação: sempre deve ser executada após outras atividades
+para análise e se detectada alguma inconsistência volta para a atividade adequada para corrigir. </p>
+</li>
+</ul>
+<h2 id="ciclo-de-vida-de-mayhew">Ciclo de vida de Mayhew</h2>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/design-process/ciclo-de-vida-mayhew.png"><img alt="Ciclo de vida de Mayhew" src="../../assets/img/design-process/ciclo-de-vida-mayhew.png"/></a></p>
+<h6 id="figura-03-ciclo-de-vida-de-mayhew-fonte-barbosa-et-al-2010">Figura 03: Ciclo de vida de Mayhew. Fonte: (BARBOSA et al., 2010)</h6>
+<p>O ciclo de Mayhew mostrado na (Figura 03) é um diagrama que descreve de maneira aprofundada as etapas do processo de design, situações do contexto de uso e proposições que devem ser feitas para avaliar o desenvolvimento ao longo do desenvolvimento. Ele possui diversas etapas a serem seguidas, que são agrupadas a partir de suas três principais propostas:</p>
+<ul>
+<li>Análise de requisitos: são criadas as metas de usabilidade com base
+no perfil dos usuários, análise de tarefas, possibilidades e limitações da plataforma em que o sistema será executados e princípios gerais de design de IHC;</li>
+<li>Design, avaliação, desenvolvimento: sequência de etapas onde é elaborada a solução para atingir as metas de usabilidade, também dividido em três níveis de etapas sequenciais;</li>
+<li>Instalação: após implantada, são coletadas as avaliações dos usuários para que sejam feitos futuros refinamentos.</li>
+</ul>
+<h2 id="escolha-do-modelo">Escolha do modelo:</h2>
+<p>Para esse projeto, o cronograma de atividades e as tarefas que serão realizadas pelos membros foram definidos a partir do ciclo de vida de Mayhew, por ser o diagrama de processos mais detalhado dentre as opções, fornecendo maior organização e orientação entre as etapas, além de auxiliar no processo didático dos integrantes.</p>
+<h2 id="referencias">Referências:</h2>
+<blockquote>
+<p>BARBOSA, S.D.J.; SILVA, B.S. Interação Humano-Computador. Editora Campus-Elsevier, 2010. P. 92-130.</p>
+</blockquote>
+<h1 id="historico-de-versao">Histórico de versão</h1>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Data</th>
+<th>Descrição</th>
+<th>Autor</th>
+<th>Revisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>23/11/2022</td>
+<td>Criação do documento</td>
+<td>Igor Silva de Paiva</td>
+<td>Artur</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>23/11/2022</td>
+<td>Adicionando legendas nas imagens</td>
+<td>Igor Silva de Paiva</td>
+<td>Artur</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>12/12/2022</td>
+<td>Corrigidas legendas, fontes e chamadas das figuras no texto</td>
+<td>Eric</td>
+<td>Igor</td>
+</tr>
+</tbody>
+</table>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      UnB - Faculdade do Gama © 2022
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://github.com/Interacao-Humano-Computador/2022.2-UnbIdiomas" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</a>
+<a class="md-social__link" href="http://www.unbidiomas.unb.br" rel="noopener" target="_blank" title="www.unbidiomas.unb.br">
+<svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9V320c0 28.4-10.8 57.7-22.3 80.8-6.5 13-13.9 25.8-22.5 37.6-3.2 4.3-4.1 9.9-2.3 15s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7.3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7-3.2-14.2-7.5-28.7-13.5-42v-24.6c0-30.2 10.2-58.7 27.9-81.5 12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5.8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1l280.6-101c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1c-7.6-2.7-15.6-4.1-23.7-4.1zM128 408c0 35.3 86 72 192 72s192-36.7 192-72l-15.3-145.4L354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6l-142.2-51.4L128 408z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.ba449ae6.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

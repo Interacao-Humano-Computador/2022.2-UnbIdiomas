@@ -1,0 +1,1102 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://interacao-humano-computador.github.io/2022.2-UnbIdiomas/An%C3%A1lise%20de%20Requisitos/guiaEstilo/" rel="canonical"/>
+<link href="../aspectosEticos/" rel="prev"/>
+<link href="../metasUsabilidade/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.0.3" name="generator"/>
+<title>Guia de Estilo - UnB Idiomas</title>
+<link href="../../assets/stylesheets/main.6b71719e.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+                </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="green" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#guia-de-estilo">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="UnB Idiomas" class="md-header__button md-logo" data-md-component="logo" href="../.." title="UnB Idiomas">
+<img alt="logo" src="../../assets/icons/unb.jpg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            UnB Idiomas
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Guia de Estilo
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="green" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="green" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+</form>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</div>
+<div class="md-source__repository">
+    2022.2-UnbIdiomas
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+      Inicio
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../aspectosEticos/">
+        Análise de Requisitos
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao1/">
+        Apresentações
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega1/">
+        Atas das Reuniões
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/An%C3%A1lise%20de%20Tarefas/planAnaTarefas/">
+        Design, Avaliação e Desenvolvimento
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Planejamento/avaliacao/">
+        Planejamento
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../pol%C3%ADticas/branch/">
+        Políticas
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="UnB Idiomas" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="UnB Idiomas">
+<img alt="logo" src="../../assets/icons/unb.jpg"/>
+</a>
+    UnB Idiomas
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</div>
+<div class="md-source__repository">
+    2022.2-UnbIdiomas
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        Inicio
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label aria-expanded="true" class="md-nav__link" for="__nav_2" tabindex="0">
+          Análise de Requisitos
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Análise de Requisitos" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Análise de Requisitos
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../aspectosEticos/">
+        Aspectos Éticos
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Guia de Estilo
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Guia de Estilo
+      </a>
+<nav aria-label="Conteúdo da página" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Conteúdo da página
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-introducao">
+    1. Introdução
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-resultados-de-analise">
+    2. Resultados de Análise
+  </a>
+<nav aria-label="2. Resultados de Análise" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#21-descricao-do-ambiente-de-trabalho-do-usuario">
+    2.1: Descrição do ambiente de trabalho do usuário
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-elementos-da-interface">
+    3. Elementos da interface
+  </a>
+<nav aria-label="3. Elementos da interface" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#32-tipografia">
+    3.2 Tipografia
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#33-simbolos-nao-tipografados">
+    3.3 Simbolos não tipografados
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#34-cores">
+    3.4 Cores
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#35-animacoes">
+    3.5 Animações
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-elementos-de-interacao">
+    4. Elementos de interação
+  </a>
+<nav aria-label="4. Elementos de interação" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#41-estilo-de-interacao">
+    4.1 Estilo de interação
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#42-selecao-de-estilo">
+    4.2 Seleção de estilo
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#43-aceleradores-teclas-de-atalho">
+    4.3 Aceleradores (Teclas de atalho)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-elementos-de-acao">
+    5. Elementos de ação
+  </a>
+<nav aria-label="5. Elementos de ação" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#51-preenchimento-de-campos">
+    5.1. Preenchimento de campos
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#52-acessos">
+    5.2. Acessos
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#53-ativacao">
+    5.3. Ativação
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6-vocabulario-e-padroes">
+    6. Vocabulário e padrões
+  </a>
+<nav aria-label="6. Vocabulário e padrões" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#61-terminologia">
+    6.1 Terminologia
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#62-tipos-de-tela-para-tarefas-comuns">
+    6.2 Tipos de tela (para Tarefas comuns)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#63-sequencias-de-dialogos-para-feedback-ou-confirmacao-de-operacao">
+    6.3 Sequências de diálogos (para Feedback ou confirmação de operação)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#referencias">
+    Referências
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#historico-de-versoes">
+    Histórico de versões
+  </a>
+<nav aria-label="Histórico de versões" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tabela-1-historico-de-versoes-fonte-autoria-propria">
+    Tabela 1 - Histórico de versões. Fonte: Autoria própria
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../metasUsabilidade/">
+        Metas de usabilidade
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../perfilUsuario/">
+        Perfil do Usuário
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../personas/">
+        Personas
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../principiosGerais/">
+        Princípios Gerais de Projeto
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" id="__nav_2_7" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_2_7" tabindex="0">
+          Análise de Tarefas
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Análise de Tarefas" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_7">
+<span class="md-nav__icon md-icon"></span>
+          Análise de Tarefas
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../An%C3%A1lise%20de%20Tarefas/AHT/">
+        Análise Hierárquica de Tarefas
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../An%C3%A1lise%20de%20Tarefas/CMN-GOMS/">
+        CNM-GOMS
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_3" tabindex="0">
+          Apresentações
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Apresentações" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Apresentações
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao1/">
+        Apresentação da Entrega 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao2/">
+        Apresentação da Entrega 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao3/">
+        Apresentação da Entrega 3
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao4/">
+        Apresentação da Entrega 4
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Apresenta%C3%A7%C3%B5es/apresentacao5/">
+        Apresentação da Entrega 5
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_4" tabindex="0">
+          Atas das Reuniões
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Atas das Reuniões" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Atas das Reuniões
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega1/">
+        Entrega 1 - Reunião 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega2/">
+        Entrega 2 - Reunião 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega3/">
+        Entrega 3 - Reunião 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega4/">
+        Entrega 4 - Reunião
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega5/">
+        Entrega 5 - Reunião 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Atas%20das%20Reuni%C3%B5es/entrega6/">
+        Entrega 4 - Reunião
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5" tabindex="0">
+          Design, Avaliação e Desenvolvimento
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Design, Avaliação e Desenvolvimento" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Design, Avaliação e Desenvolvimento
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1" id="__nav_5_1" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5_1" tabindex="0">
+          Nível 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Nível 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_1">
+<span class="md-nav__icon md-icon"></span>
+          Nível 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1_1" id="__nav_5_1_1" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5_1_1" tabindex="0">
+          Análise de Tarefas
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Análise de Tarefas" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_5_1_1">
+<span class="md-nav__icon md-icon"></span>
+          Análise de Tarefas
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/An%C3%A1lise%20de%20Tarefas/planAnaTarefas/">
+        Planejamento da Avaliação da Análise de Tarefas
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/An%C3%A1lise%20de%20Tarefas/plan_relatos_resultados/">
+        Planejamento do relato dos resultados da análise de tarefas
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/An%C3%A1lise%20de%20Tarefas/resAvalAnaliseDeTarefas/">
+        Resultado da Avaliação da Análise de Tarefas
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1_2" id="__nav_5_1_2" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5_1_2" tabindex="0">
+          Storyboard
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Storyboard" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_5_1_2">
+<span class="md-nav__icon md-icon"></span>
+          Storyboard
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/Storyboard/planAvalStoryboard/">
+        Planejamento da Avaliação do Storyboard
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/Storyboard/planRelAvalStoryboard/">
+        Planejamento do relato da Avaliação do Storyboard
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/Storyboard/relAvalStoryboard/">
+        Resultados da avaliação de Storyboard
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/Storyboard/storyboards/">
+        Storyboards
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%201/Storyboard/testePiloto/">
+        Teste Piloto
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" id="__nav_5_2" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5_2" tabindex="0">
+          Nível 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Nível 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_2">
+<span class="md-nav__icon md-icon"></span>
+          Nível 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%202/planAvalPrototipoPapel/">
+        Planejamento da Avaliação do Protótipo de Papel
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%202/planRelAvalPrototipoPapel/">
+        Planejamento do relato da Avaliação do Protótipo de Papel
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" id="__nav_5_3" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_5_3" tabindex="0">
+          Nível 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Nível 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_3">
+<span class="md-nav__icon md-icon"></span>
+          Nível 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Design%2C%20Avalia%C3%A7%C3%A3o%20e%20Desenvolvimento/N%C3%ADvel%203/planAvalPrototipoAlta/">
+        Planejamento da Avaliação do Protótipo de Papel
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_6" tabindex="0">
+          Planejamento
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Planejamento" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          Planejamento
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Planejamento/avaliacao/">
+        Avaliação do site
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Planejamento/ferramentas/">
+        Ferramentas
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Planejamento/metodologias/">
+        Metodologias
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Planejamento/planejamento/">
+        Planejamento da avaliação
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Planejamento/processoDesign/">
+        Processo de Design
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Planejamento/roadmap/">
+        Cronograma
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Planejamento/siteAvaliados/">
+        Listas de sites avaliados
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" id="__nav_7" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_7" tabindex="0">
+          Políticas
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Políticas" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+          Políticas
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../pol%C3%ADticas/branch/">
+        Politica de branches
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../pol%C3%ADticas/commit/">
+        Política de commits
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Conteúdo da página" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Conteúdo da página
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-introducao">
+    1. Introdução
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-resultados-de-analise">
+    2. Resultados de Análise
+  </a>
+<nav aria-label="2. Resultados de Análise" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#21-descricao-do-ambiente-de-trabalho-do-usuario">
+    2.1: Descrição do ambiente de trabalho do usuário
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-elementos-da-interface">
+    3. Elementos da interface
+  </a>
+<nav aria-label="3. Elementos da interface" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#32-tipografia">
+    3.2 Tipografia
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#33-simbolos-nao-tipografados">
+    3.3 Simbolos não tipografados
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#34-cores">
+    3.4 Cores
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#35-animacoes">
+    3.5 Animações
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-elementos-de-interacao">
+    4. Elementos de interação
+  </a>
+<nav aria-label="4. Elementos de interação" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#41-estilo-de-interacao">
+    4.1 Estilo de interação
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#42-selecao-de-estilo">
+    4.2 Seleção de estilo
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#43-aceleradores-teclas-de-atalho">
+    4.3 Aceleradores (Teclas de atalho)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-elementos-de-acao">
+    5. Elementos de ação
+  </a>
+<nav aria-label="5. Elementos de ação" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#51-preenchimento-de-campos">
+    5.1. Preenchimento de campos
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#52-acessos">
+    5.2. Acessos
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#53-ativacao">
+    5.3. Ativação
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6-vocabulario-e-padroes">
+    6. Vocabulário e padrões
+  </a>
+<nav aria-label="6. Vocabulário e padrões" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#61-terminologia">
+    6.1 Terminologia
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#62-tipos-de-tela-para-tarefas-comuns">
+    6.2 Tipos de tela (para Tarefas comuns)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#63-sequencias-de-dialogos-para-feedback-ou-confirmacao-de-operacao">
+    6.3 Sequências de diálogos (para Feedback ou confirmação de operação)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#referencias">
+    Referências
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#historico-de-versoes">
+    Histórico de versões
+  </a>
+<nav aria-label="Histórico de versões" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tabela-1-historico-de-versoes-fonte-autoria-propria">
+    Tabela 1 - Histórico de versões. Fonte: Autoria própria
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="guia-de-estilo">Guia de Estilo</h1>
+<p>Trata-se de um documento que contempla as diretrizes de design tomadas em um produto ou projeto, estipulado as regras de design a serem incorporadas por toda a equipe de design e de desenvolvedores. Documentando o design de tipografia, cores, grids, breakpoints e entre outros.</p>
+<h2 id="1-introducao">1. Introdução</h2>
+<p>O objetivo deste guia é descrever as decisões de design tomadas no site Unb idiomas, abordando sobre as diretrizes utilizadas na página inicial, módulo de cadastro de usuário, página corporativa, de chamada pública e de contatos. Viabilizando, dessa forma, a consulta das decisões de guia de estilo e prototipação de melhorias.</p>
+<h2 id="2-resultados-de-analise">2. Resultados de Análise</h2>
+<p>O site da UnB Idiomas foi análisado em vários aspectos, como interface, usabilidade e design, com o intuito de assegurar que as expectativas dos usuários é atendida. </p>
+<h4 id="21-descricao-do-ambiente-de-trabalho-do-usuario">2.1: Descrição do ambiente de trabalho do usuário</h4>
+<p>Na página inicial do site são encontrados: </p>
+<ul>
+<li>Um cabeçalho contendo os logos da UnB Idiomas, da Universidade de Brasília, do Instituto de Letras da UnB e do LET.</li>
+<li>
+<p>Um botão "Portais", onde os usuários que possuem cadastro podem acessar os portais de seu uso.</p>
+</li>
+<li>
+<p>Uma barra de navegação, na qual o usuário pode acessar informações sobre normas, contatos, cadastro, etc.</p>
+</li>
+<li>
+<p>Um "mural", composto por uma imagem no formato png, no qual são encontrados avisos importantes.</p>
+</li>
+<li>
+<p>Três menus divididos em "blocos", nos quais os usuários podem acessar informações referentes aos cursos oferecidos, informes e destaques. </p>
+</li>
+<li>
+<p>Um rodapé contendo atalhos para seções referentes a informações da UnB Idiomas, propostas e projetos parceiros.</p>
+</li>
+</ul>
+<h2 id="3-elementos-da-interface">3. Elementos da interface</h2>
+<p><strong>3.1. Disposição espacial e grid</strong></p>
+<p>Como elementos de disposição espacial, o sistema utiliza grids no HTML para a exercer a configuração de layout das páginas, existindo ao todo 4 modelos de grids do sistema:</p>
+<p><strong>3.1.1. Homepage</strong></p>
+<p>A home page é caracterizada como simples, sendo composta por uma aba de navegação na parte superior, no qual viabiliza o acesso as outras páginas do sistema, além de ter, ao longo da sua estrutura, um carrosel de informativos em imagens, links com os cursos ofertados pela plataforma, informativos em texto sobre os cursos, destaques do sistema e um rodapé com links de acesso a outras páginas do Unb Idiomas. Podendo ser evidenciado o grid na figura 1: </p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/guia-de-estilo/HomePage.png"><img alt="Figura 1" src="../../assets/img/guia-de-estilo/HomePage.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 1 – Imagem de exibição de grid da página</b><br/>
+  Fonte: Autores</h6>
+</figcaption>
+<p></p>
+<p><strong>3.1.2. Cadastro de Usuário</strong></p>
+<p>Presente na aba de cadastro pode ser evidenciado um formulário de preenchimento com a requisição de informações pessoais dos usuários da Unb Idiomas. (Figura 2)</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/guia-de-estilo/formulario.png"><img alt="Figura 2" src="../../assets/img/guia-de-estilo/formulario.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 2 – Imagem de exibição de grid da página</b><br/>
+  Fonte: Autores</h6>
+</figcaption>
+<p></p>
+<p><strong>3.1.3. Página Coorporativa, Sobre a Instituição, Solicitação de Proposta de Curso, Projetos Violes e Funap</strong></p>
+<p>As páginas citadas acima detém do mesmo layout de disposição espacial, havendo ou não a presdisposição de um button na parte inferior para ter acesso a um fórmulario de solicitação de proposta de curso. Sendo evidenciado na figura:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/guia-de-estilo/informativos.png"><img alt="Figura 3" src="../../assets/img/guia-de-estilo/informativos.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 3 – Imagem de exibição de grid da página</b><br/>
+  Fonte: Autores</h6>
+</figcaption>
+<p></p>
+<p><strong>3.1.4. Página de Chamada pública, Contatos e Equipe</strong></p>
+<p>Obtém o mesmo layout de disposição de grid, havendo a predisposição de buttons informativos sobre a plataforma. </p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/guia-de-estilo/buttonPage.png"><img alt="Figura 4" src="../../assets/img/guia-de-estilo/buttonPage.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 4 – Imagem de exibição de grid da página</b><br/>
+  Fonte: Autores</h6>
+</figcaption>
+<p></p>
+<h3 id="32-tipografia">3.2 Tipografia</h3>
+<p>A tipografia do site utiliza três fontes principais, sendo elas:</p>
+<ul>
+<li>Droid Sans</li>
+<li>Liberation Sans</li>
+<li>Helvetica</li>
+</ul>
+<p>A fonte predominante do site é a Droid Sans, obtendo no button de portais de acesso a utilização da fonte Helvetica, além de haver uma muda de diretriz de design na página de Chamada Pública, tendo links de acessos a outras páginas alocadas com fonte Liberation Sans.</p>
+<h3 id="33-simbolos-nao-tipografados">3.3 Simbolos não tipografados</h3>
+<p>A plataforma faz uso dos simbolos não tipografados:</p>
+<table>
+<thead>
+<tr>
+<th>Descrição</th>
+<th>Imagem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Icone 5</td>
+<td><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../assets/img/guia-de-estilo/mais.png"><img alt="drawing" height="50" src="../assets/img/guia-de-estilo/mais.png" width="50"/></a></td>
+</tr>
+<tr>
+<td>Icone 6</td>
+<td><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../assets/img/guia-de-estilo/menos.png"><img alt="drawing" height="50" src="../assets/img/guia-de-estilo/menos.png" width="50"/></a></td>
+</tr>
+<tr>
+<td>Icone 7</td>
+<td><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../assets/img/guia-de-estilo/seta.png"><img alt="drawing" height="50" src="../assets/img/guia-de-estilo/seta.png" width="50"/></a></td>
+</tr>
+<tr>
+<td>Icone 8</td>
+<td><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../assets/img/guia-de-estilo/Perguntas.png"><img alt="drawing" height="50" src="../assets/img/guia-de-estilo/Perguntas.png" width="50"/></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="34-cores">3.4 Cores</h3>
+<p>As cores utilizadas em todo o site seguem o padrão de cores do símbolo da Unb Idiomas, havendo-se algumas variações delas, como mostra a figuras 9.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/guia-de-estilo/paletaCores.png"><img alt="Figura 9" src="../../assets/img/guia-de-estilo/paletaCores.png"/></a></p>
+<figcaption align="center">
+<h6> <b>Figura 9 – paleta de cores utilizadas na página</b><br/>
+  Fonte: Autores</h6>
+</figcaption>
+<p></p>
+<h3 id="35-animacoes">3.5 Animações</h3>
+<p>O site não possui animações.</p>
+<h2 id="4-elementos-de-interacao">4. Elementos de interação</h2>
+<h5 id="41-estilo-de-interacao"><strong>4.1 Estilo de interação</strong></h5>
+<p>O site é composto, em sua maioria, por botões, menus e links, sendo que estes últimos levam a áreas diferentes do site ou a arquivos <em>.pdf</em> contendo informações sobre cursos, normas e etc.</p>
+<p>As interações do usuário com o site são feitas através dos elementos listados acima, com o foco no acesso as áreas ou informações desejadas pelo mesmo.</p>
+<h5 id="42-selecao-de-estilo"><strong>4.2 Seleção de estilo</strong></h5>
+<p>O site exibe seus elementos e informações de maneira clara, apresentando uma interface simples, porém antiquada em comparação a outras plataformas similares.</p>
+<h5 id="43-aceleradores-teclas-de-atalho"><strong>4.3 Aceleradores (Teclas de atalho)</strong></h5>
+<p>O site não apresenta nenhum acelerador ou comandos/teclas de atalho que auxiliem na navegação.</p>
+<h2 id="5-elementos-de-acao">5. Elementos de ação</h2>
+<h3 id="51-preenchimento-de-campos">5.1. Preenchimento de campos</h3>
+<p>Os campos de preenchimento que aparecem por todo o site, devem ser preenchido manualmente, não existe a opção de preenchimento automático.</p>
+<h3 id="52-acessos">5.2. Acessos</h3>
+<p>Alguns acessos são bloqueados no site, requisitando a validação de creedenciais para fazer o uso restrito de páginas de aluno, professor, e Neppe. Assim como de ter acesso a questões de disponibilidade, como se inscrever a cursos ofertados pela plataforma.</p>
+<h3 id="53-ativacao">5.3. Ativação</h3>
+<p>O usuário detém de certas limitações no site,necessitando estar logado para ter acesso completo as funcionalidades disponíveis.</p>
+<h2 id="6-vocabulario-e-padroes">6. Vocabulário e padrões</h2>
+<h5 id="61-terminologia"><strong>6.1 Terminologia</strong></h5>
+<p>O vocabulário utilizado no site é formal, prezando pela boa compreensão do leitor. Alguns do termos presentes podem ser de menor entendimento para uma parcela dos usuários, principalmente aos que contém um conhecimento raso no que diz respeito a linguagem tecnológica e universitária, sendo eles:</p>
+<ul>
+<li>
+<p><em>PDF</em> : se refere ao formato de arquivo <em>.pdf</em>, utilizado principalmente em documentos. No site é encontrado na aba "Destaques", onde o usuário pode acessar certos documentos neste formato. </p>
+</li>
+<li>
+<p><em>WORD</em> : se refere ao formato de arquivo <em>.docx</em>, utilizado principalmente em documentos, cuja forma de acesso principal é o programa <em>Microsoft Word</em>. No site é encontrado na aba "Destaques", onde o usuário pode acessar certos documentos neste formato.</p>
+</li>
+<li>
+<p><em>PES/PESES</em> : se refere ao <em>Projeto de Estágio Supervisionado (PES)</em> e ao <em>Projeto de Estágio Supervisionado de Espanhol (PESES)</em>, que compõem o Programa Permanente de Extensão UnB Idiomas, do Departamento de Línguas Estrangeiras e Tradução (LET), da Universidade de Brasília.</p>
+</li>
+</ul>
+<p>Situada abaixo, a figura 10 apresenta a área onde esses termos são encontrados no site:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://raw.githubusercontent.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/main/docs/assets//img/guia-de-estilo/destaquesVocabulario.png"><img src="https://raw.githubusercontent.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/main/docs/assets//img/guia-de-estilo/destaquesVocabulario.png"/></a>                                                                      Figura 10 - destaques da homepage do site UnB Idiomas <a href="#ancora1">¹</a> </p>
+<h5 id="62-tipos-de-tela-para-tarefas-comuns"><strong>6.2 Tipos de tela (para Tarefas comuns)</strong></h5>
+<p>O site apresenta diversas telas nas quais o usuário executa tarefas comuns:</p>
+<ul>
+<li>
+<p>Na figura 11, situada abaixo, podemos ver a Tela Principal :
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://raw.githubusercontent.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/main/docs/assets//img/guia-de-estilo/telaPrincipal.png"><img src="https://raw.githubusercontent.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/main/docs/assets//img/guia-de-estilo/telaPrincipal.png"/></a>
+  Figura 11 - tela principal do site UnB Idiomas <a href="#ancora1">¹</a></p>
+</li>
+<li>
+<p>Na figura 12, situada abaixo, podemos ver a Tela de Login do Aluno :
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://raw.githubusercontent.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/main/docs/assets//img/guia-de-estilo/telaLogin.png"><img src="https://raw.githubusercontent.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/main/docs/assets//img/guia-de-estilo/telaLogin.png"/></a>
+  Figura 12 - tela de Login do Aluno do site UnB Idiomas <a href="#ancora1">¹</a></p>
+</li>
+<li>
+<p>Na figura 13, situada abaixo, podemos ver a Tela de Login do Professor :
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://raw.githubusercontent.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/main/docs/assets//img/guia-de-estilo/telaLoginProf.png"><img src="https://raw.githubusercontent.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/main/docs/assets//img/guia-de-estilo/telaLoginProf.png"/></a>
+  Figura 13 - tela de Login do Professor do site UnB Idiomas <a href="#ancora1">¹</a></p>
+</li>
+<li>
+<p>Na figura 14, situada abaixo, podemos ver a tela de curso (é idêntica para todos os cursos apresentados na Tela Principal) :
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://raw.githubusercontent.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/main/docs/assets//img/guia-de-estilo/telaCurso.png"><img src="https://raw.githubusercontent.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/main/docs/assets//img/guia-de-estilo/telaCurso.png"/></a>
+  Figura 14 - tela de curso do site UnB Idiomas <a href="#ancora1">¹</a></p>
+</li>
+<li>
+<p>Na figura 15, situada abaixo, podemos ver a Tela de contatos da UnB Idiomas :
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://raw.githubusercontent.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/main/docs/assets//img/guia-de-estilo/telaContatos.png"><img src="https://raw.githubusercontent.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/main/docs/assets//img/guia-de-estilo/telaContatos.png"/></a>
+  Figura 15 - tela de contatos do site UnB Idiomas <a href="#ancora1">¹</a></p>
+</li>
+<li>
+<p>Na figura 16, situada abaixo, podemos ver a Tela de propostas de cursos para a UnB Idiomas :
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://raw.githubusercontent.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/main/docs/assets//img/guia-de-estilo/telaPropostaCurso.png"><img src="https://raw.githubusercontent.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/main/docs/assets//img/guia-de-estilo/telaPropostaCurso.png"/></a>
+  Figura 15 - tela de propostas de cursos do site UnB Idiomas <a href="#ancora1">¹</a></p>
+</li>
+</ul>
+<h5 id="63-sequencias-de-dialogos-para-feedback-ou-confirmacao-de-operacao"><strong>6.3 Sequências de diálogos (para Feedback ou confirmação de operação)</strong></h5>
+<p>Foram encontradas sequências de diálogos somente para a efetuação de login, na ocasião em que o usuário errar seu CPF ou senha, conforme mostrado na figura 11, situada abaixo:
+ <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://raw.githubusercontent.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/main/docs/assets//img/guia-de-estilo/avisoLoginInvalido.png"><img src="https://raw.githubusercontent.com/Interacao-Humano-Computador/2022.2-UnbIdiomas/main/docs/assets//img/guia-de-estilo/avisoLoginInvalido.png"/></a>
+  Figura 11 - aviso login inválido do site UnB Idiomas <a href="#ancora1">¹</a> </p>
+<h2 id="referencias">Referências</h2>
+<blockquote>
+<ul>
+<li><a id="ancora1"></a>[1] Unb Idiomas. Acesso em: 20 de nov. de 2022. Disponível em: <a href="http://www.unbidiomas.unb.br">http://www.unbidiomas.unb.br</a></li>
+</ul>
+</blockquote>
+<h2 id="historico-de-versoes">Histórico de versões</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Data</th>
+<th align="center">Versão</th>
+<th align="center">Descrição</th>
+<th align="center">Autor(es)</th>
+<th align="center">Revisor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">9/12/2022</td>
+<td align="center">1.0</td>
+<td align="center">Criação da página da entrega 3</td>
+<td align="center">Henrique Galdino Couto</td>
+<td align="center">Artur, Eric,  Igor, Thiago</td>
+</tr>
+<tr>
+<td align="center">12/12/2022</td>
+<td align="center">1.1</td>
+<td align="center">Elaboração da Introdução, Elementos da Interface e Elementos de ação</td>
+<td align="center">Artur Seppa Reiman</td>
+<td align="center">Henrique, Eric,  Igor, Thiago</td>
+</tr>
+<tr>
+<td align="center">12/12/2022</td>
+<td align="center">1.2</td>
+<td align="center">Elaboração dos Resultados de Análise, Elementos de Interação e Vocabulários e padrões</td>
+<td align="center">Henrique Galdino Reiman</td>
+<td align="center">Artur, Eric,  Igor, Thiago</td>
+</tr>
+</tbody>
+</table>
+<h6 id="tabela-1-historico-de-versoes-fonte-autoria-propria">Tabela 1 - Histórico de versões. Fonte: Autoria própria</h6>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      UnB - Faculdade do Gama © 2022
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://github.com/Interacao-Humano-Computador/2022.2-UnbIdiomas" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</a>
+<a class="md-social__link" href="http://www.unbidiomas.unb.br" rel="noopener" target="_blank" title="www.unbidiomas.unb.br">
+<svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9V320c0 28.4-10.8 57.7-22.3 80.8-6.5 13-13.9 25.8-22.5 37.6-3.2 4.3-4.1 9.9-2.3 15s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7.3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7-3.2-14.2-7.5-28.7-13.5-42v-24.6c0-30.2 10.2-58.7 27.9-81.5 12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5.8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1l280.6-101c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1c-7.6-2.7-15.6-4.1-23.7-4.1zM128 408c0 35.3 86 72 192 72s192-36.7 192-72l-15.3-145.4L354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6l-142.2-51.4L128 408z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.ba449ae6.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
